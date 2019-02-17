@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Product_list</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <h1>you are under product_list.html</h1> -->
+
+    <p>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+            {% load static %}
+            <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'  %}">
+
+        </head>
+
+        <body>
+            <div class="container">
+                <!-- <h1>hello india</h1> -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                    <a class="navbar-brand" href="#">Aamzon</a>
+                    <!-- <div class="justify align-right"></div> -->
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                        <ul class="navbar-nav align-end ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Login </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign Up</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </nav>
+
+
+               
+                <div class="row">
+                    <div class="col-6 ">
+                        <img src="{{product.image_url}} " class="img-fluid"  style = "align-self: stretch" alt="This was the image from web">
+                    </div>
+                    <div class="col-6">
+                        <h3>{{product.product_name}}</h3>
+                        <p class="text">{{product.description}}</p>
+                        <p>
+                            Iske ke liye dene padenge = {{ product.price}}
+                        </p>
+                        <button class="btn btn-primary">Add to cart </button>
+                        <button class="btn btn-success">Abhi kharidna h</button>                        
+                    </div>
+                </div>
+               
+
+
+
+
+                    <!-- No HTML ahead this comment (to imporve faster loading of html before scripts) -->
+                    <!-- <script src="htt<script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script> -->
+
+                    <script src={% static 'js/bootstrap.min.js' %}></script>
+        </body>
+
+        </html>
+    </p>
+
+</body>
+
+</html>
